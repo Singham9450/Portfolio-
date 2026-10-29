@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surya Pratap Singh | Site Engineer – MEP, Tendering & Commercial</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        paper: '#F8FAFC', slate2: '#1E293B', amber2: '#D97706', amberL: '#F59E0B',
+        steel: '#0284C7', blueprint: '#0F172A'
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace']
+      }
+    }
+  }
+}
+</script>
+<style>
+  body {
+    background-color: #F8FAFC;
+    color: #1E293B;
+    background-image:
+      linear-gradient(rgba(2,132,199,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(2,132,199,0.06) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .frame { border: 1px solid #CBD5E1; }
+  .spec-hover { opacity: 0; transform: translateY(6px); transition: all .25s ease; }
+  .card:hover .spec-hover { opacity: 1; transform: translateY(0); }
+  .card:hover { border-color: #0284C7; box-shadow: 0 0 0 1px #0284C7; }
+  .tab.active { background: #0F172A; color: #F8FAFC; border-color: #0F172A; }
+  .ph { background: repeating-linear-gradient(45deg, #F1F5F9, #F1F5F9 8px, #E2E8F0 8px, #E2E8F0 16px); }
+  .modal-open { overflow: hidden; }
+</style>
+</head>
+<body class="font-sans antialiased">
+
+<!-- NAV -->
+<nav class="sticky top-0 z-40 bg-paper/90 backdrop-blur border-b border-slate-300">
+  <div class="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
+    <a href="#top" class="font-mono text-sm font-bold tracking-tight">SPS<span class="text-steel">/</span>ENG</a>
+    <div class="hidden md:flex gap-6 text-sm font-medium">
+      <a href="#projects" class="hover:text-steel">Projects</a>
+      <a href="#competencies" class="hover:text-steel">Competencies</a>
+      <a href="#certs" class="hover:text-steel">Credentials</a>
+      <a href="#contact" class="hover:text-steel">Contact</a>
+    </div>
+    <a href="#contact" class="md:hidden text-sm font-semibold text-amber2">Contact</a>
+  </div>
+</nav>
+
+<!-- 1. HERO -->
+<header id="top" class="max-w-6xl mx-auto px-5 pt-14 pb-10">
+  <div class="flex flex-wrap items-center gap-2 mb-5">
+    <span class="font-mono text-xs px-2 py-1 bg-steel text-white">AVAILABLE FOR MOBILITY</span>
+    <span class="font-mono text-xs px-2 py-1 border border-slate-400">GREATER NOIDA / BALLIA, UP</span>
+  </div>
+  <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.05]">
+    Surya Pratap Singh
+  </h1>
+  <p class="mt-3 text-lg md:text-xl font-semibold text-steel">Site Engineer &middot; MEP &amp; Electrical &middot; Tendering &amp; Commercial Coordination</p>
+  <p class="mt-5 max-w-2xl text-slate-600 leading-relaxed">
+    Electrical engineer with on-site execution across transmission lines, industrial plants, warehouses and high-rise residential towers.
+    I take projects from drawings to handover: verifying quantities, controlling safety and quality on site, and closing tenders and vendor contracts within budget.
+  </p>
+
+  <div class="mt-8 flex flex-wrap gap-3">
+    <a href="#projects" class="px-5 py-3 bg-amber2 hover:bg-amberL text-white font-semibold">View Project Dossiers &rarr;</a>
+    <a href="#contact" class="px-5 py-3 border-2 border-blueprint font-semibold hover:bg-blueprint hover:text-white">Download CV / Request BOQ Sample</a>
+  </div>
+
+  <!-- KPI bar -->
+  <div class="mt-12 grid grid-cols-2 md:grid-cols-4 frame bg-white">
+    <div class="p-5 border-r border-b md:border-b-0 border-slate-300">
+      <div class="font-mono text-3xl font-bold text-steel">3 L</div>
+      <div class="font-mono text-xs uppercase text-slate-500 mt-1">Sq. ft. MEP delivered (Pragati)</div>
+    </div>
+    <div class="p-5 md:border-r border-b md:border-b-0 border-slate-300">
+      <div class="font-mono text-3xl font-bold text-steel">[&#8377; Cr]</div>
+      <div class="font-mono text-xs uppercase text-slate-500 mt-1">Cumulative value managed <span class="text-amber2">[insert]</span></div>
+    </div>
+    <div class="p-5 border-r border-slate-300">
+      <div class="font-mono text-3xl font-bold text-steel">[ 0 ]</div>
+      <div class="font-mono text-xs uppercase text-slate-500 mt-1">Lost-time injury hours <span class="text-amber2">[insert]</span></div>
+    </div>
+    <div class="p-5">
+      <div class="font-mono text-3xl font-bold text-steel">5+</div>
+      <div class="font-mono text-xs uppercase text-slate-500 mt-1">Years on site (since Dec 2020)</div>
+    </div>
+  </div>
+</header>
+
+<!-- 2. PROJECT DOSSIERS -->
+<section id="projects" class="max-w-6xl mx-auto px-5 py-14">
+  <div class="flex items-end justify-between flex-wrap gap-4 mb-6">
+    <div>
+      <p class="font-mono text-xs text-steel uppercase tracking-widest">Section 02</p>
+      <h2 class="text-3xl font-extrabold">Featured Project Dossiers</h2>
+    </div>
+    <div class="flex flex-wrap gap-2" id="filters">
+      <button class="tab active font-mono text-xs px-3 py-2 border border-slate-400" data-filter="all">ALL</button>
+      <button class="tab font-mono text-xs px-3 py-2 border border-slate-400" data-filter="Infrastructure">INFRASTRUCTURE</button>
+      <button class="tab font-mono text-xs px-3 py-2 border border-slate-400" data-filter="Industrial">INDUSTRIAL &amp; WAREHOUSING</button>
+      <button class="tab font-mono text-xs px-3 py-2 border border-slate-400" data-filter="Residential">RESIDENTIAL</button>
+      <button class="tab font-mono text-xs px-3 py-2 border border-slate-400" data-filter="Commercial">COMMERCIAL &amp; TENDERING</button>
+    </div>
+  </div>
+
+  <div id="grid" class="grid md:grid-cols-2 gap-5"></div>
+</section>
+
+<!-- Modal -->
+<div id="modal" class="fixed inset-0 z-50 hidden">
+  <div class="absolute inset-0 bg-blueprint/70" data-close></div>
+  <div class="relative h-full overflow-y-auto flex items-start justify-center p-4 md:p-10">
+    <div class="relative bg-white w-full max-w-3xl frame shadow-2xl">
+      <div class="flex items-start justify-between p-5 border-b border-slate-300 bg-blueprint text-white">
+        <div>
+          <p class="font-mono text-xs text-amberL" id="m-cat"></p>
+          <h3 class="text-xl font-bold mt-1" id="m-title"></h3>
+        </div>
+        <button class="font-mono text-sm px-2 py-1 border border-white/40 hover:bg-white/10" data-close>CLOSE &times;</button>
+      </div>
+      <div class="p-5 md:p-7 space-y-6" id="m-body"></div>
+    </div>
+  </div>
+</div>
+
+<!-- 3. COMPETENCIES -->
+<section id="competencies" class="max-w-6xl mx-auto px-5 py-14 border-t border-slate-300">
+  <p class="font-mono text-xs text-steel uppercase tracking-widest">Section 03</p>
+  <h2 class="text-3xl font-extrabold mb-8">Technical &amp; Field Competencies</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-slate-300 frame">
+    <div class="bg-white p-6">
+      <h3 class="font-mono text-xs font-bold text-amber2 uppercase mb-4">Electrical &amp; MEP Execution</h3>
+      <ul class="space-y-2 text-sm">
+        <li>HT/LT power distribution</li><li>Transformers, DG sets, LT &amp; PSS panels</li>
+        <li>Sandwich busbar trunking (BBT)</li><li>Firefighting pump rooms &amp; fire pipelines</li>
+        <li>Fire alarm &amp; warehouse highbay lighting</li><li>Electrical installation, testing &amp; commissioning</li>
+      </ul>
+    </div>
+    <div class="bg-white p-6">
+      <h3 class="font-mono text-xs font-bold text-amber2 uppercase mb-4">Site Execution &amp; QA/QC</h3>
+      <ul class="space-y-2 text-sm">
+        <li>Site execution tracking</li><li>Quality inspection audits</li>
+        <li>Contractor supervision (teams of up to 30)</li><li>Quantity take-off against drawings</li>
+        <li>Material reconciliation &amp; measurement sheets</li><li>Strict site safety protocols</li>
+      </ul>
+    </div>
+    <div class="bg-white p-6">
+      <h3 class="font-mono text-xs font-bold text-amber2 uppercase mb-4">Software &amp; Drawings</h3>
+      <ul class="space-y-2 text-sm">
+        <li>AutoCAD (drawing review &amp; verification)</li><li>Single-line diagrams (SLD) review</li>
+        <li>MS Excel &amp; Office Suite</li><li>CAD layout review with design teams</li>
+        <li><span class="text-slate-400">[Add other tools used]</span></li>
+      </ul>
+    </div>
+    <div class="bg-white p-6">
+      <h3 class="font-mono text-xs font-bold text-amber2 uppercase mb-4">Commercial &amp; Contracts</h3>
+      <ul class="space-y-2 text-sm">
+        <li>Tendering &amp; RFP/RFQ floating</li><li>Techno-commercial bid evaluation</li>
+        <li>BOQ review &amp; estimation</li><li>Contract negotiation &amp; cost optimization</li>
+        <li>Vendor onboarding &amp; rate contracts</li><li>RA bill verification &amp; vendor billing</li>
+      </ul>
+    </div>
+  </div>
+  <div class="mt-6 flex flex-wrap gap-2 font-mono text-xs">
+    <span class="px-2 py-1 bg-steel/10 text-steel border border-steel/30">English</span>
+    <span class="px-2 py-1 bg-steel/10 text-steel border border-steel/30">Hindi</span>
+    <span class="px-2 py-1 bg-steel/10 text-steel border border-steel/30">MBA (IT &amp; Marketing)</span>
+    <span class="px-2 py-1 bg-steel/10 text-steel border border-steel/30">B.Tech Electrical</span>
+  </div>
+</section>
+
+<!-- 4. CERTIFICATIONS -->
+<section id="certs" class="max-w-6xl mx-auto px-5 py-14 border-t border-slate-300">
+  <p class="font-mono text-xs text-steel uppercase tracking-widest">Section 04</p>
+  <h2 class="text-3xl font-extrabold mb-8">Certifications, Training &amp; Safety Record</h2>
+  <div class="grid md:grid-cols-2 gap-5">
+    <div class="frame bg-white p-6">
+      <h3 class="font-mono text-xs text-amber2 uppercase mb-4">Education &amp; Credentials</h3>
+      <ul class="space-y-3 text-sm">
+        <li><strong>MBA, IT &amp; Marketing</strong> &mdash; AKTU, Lucknow (2021&ndash;2023)</li>
+        <li><strong>B.Tech, Electrical Engineering</strong> &mdash; JS Institute of Technology (2018&ndash;2021)</li>
+        <li><strong>Diploma, Electrical Engineering</strong> &mdash; Prasad Polytechnic, Jaunpur (2015&ndash;2018)</li>
+        <li><strong>Course on Computer Concepts (CCC)</strong> &mdash; NIELIT (Grade B)</li>
+      </ul>
+    </div>
+    <div class="frame bg-white p-6">
+      <h3 class="font-mono text-xs text-amber2 uppercase mb-4">Training &amp; Internships</h3>
+      <ul class="space-y-3 text-sm">
+        <li><strong>Industrial Internship</strong> &mdash; Divisional Railway Manager (DRM), Prayagraj (Jun&ndash;Jul 2019)</li>
+        <li><strong>Technical Training</strong> &mdash; UPPCL Rasra, Ballia (Jul&ndash;Aug 2017)</li>
+      </ul>
+    </div>
+    <div class="frame bg-white p-6 md:col-span-2">
+      <h3 class="font-mono text-xs text-amber2 uppercase mb-4">Safety &amp; Professional Certifications</h3>
+      <div class="grid sm:grid-cols-3 gap-4 font-mono text-sm">
+        <div class="ph p-4 border border-dashed border-slate-400"><span class="text-amber2">[Insert NEBOSH / OSHA cert, if held]</span></div>
+        <div class="ph p-4 border border-dashed border-slate-400"><span class="text-amber2">[Insert engineering registration, if any]</span></div>
+        <div class="ph p-4 border border-dashed border-slate-400"><span class="text-amber2">[Insert LTI / safety record, if available]</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. CONTACT -->
+<footer id="contact" class="bg-blueprint text-slate-200 py-16 mt-10">
+  <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-10">
+    <div>
+      <p class="font-mono text-xs text-amberL uppercase tracking-widest">Section 05</p>
+      <h2 class="text-3xl font-extrabold text-white mt-2">Field Dispatch</h2>
+      <p class="mt-4 text-slate-400 leading-relaxed">Open to site, MEP and tendering roles. Send a project brief, a drawing set, or a BOQ request.</p>
+      <ul class="mt-6 space-y-3 font-mono text-sm">
+        <li>&#9993; <a class="hover:text-amberL" href="mailto:suryasinghamballia@gmail.com">suryasinghamballia@gmail.com</a></li>
+        <li>&#9741; <a class="hover:text-amberL" href="https://www.linkedin.com/in/surya-pratap-singh-19b7a9183" target="_blank" rel="noopener">linkedin.com/in/surya-pratap-singh</a></li>
+        <li>&#9742; <a class="hover:text-amberL" href="tel:+919450758829">+91 94507 58829</a> &middot; <a class="hover:text-amberL" href="tel:+919506606397">+91 95066 06397</a></li>
+      </ul>
+    </div>
+    <form class="bg-slate-900 border border-slate-700 p-6 space-y-4" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Message noted (connect a form backend)';">
+      <input required placeholder="Name" class="w-full bg-transparent border border-slate-600 px-3 py-3 text-sm focus:outline-none focus:border-steel">
+      <input required type="email" placeholder="Email" class="w-full bg-transparent border border-slate-600 px-3 py-3 text-sm focus:outline-none focus:border-steel">
+      <textarea required rows="4" placeholder="Project brief / role details" class="w-full bg-transparent border border-slate-600 px-3 py-3 text-sm focus:outline-none focus:border-steel"></textarea>
+      <button class="w-full bg-amber2 hover:bg-amberL text-white font-semibold py-3">Send Inquiry</button>
+    </form>
+  </div>
+  <p class="max-w-6xl mx-auto px-5 mt-12 font-mono text-xs text-slate-500">&copy; 2026 Surya Pratap Singh &middot; Greater Noida / Ballia, Uttar Pradesh</p>
+</footer>
+
+<script>
+const projects = [
+  {
+    id: 1, cat: 'Infrastructure', catLabel: 'Transmission Infrastructure',
+    title: 'Transmission Line Earth-Wire to OPGW Replacement',
+    client: '[Insert client / contractor]', location: 'Coimbatore, Trichy, Karamadai, Salem & Ooty regions, Tamil Nadu',
+    scale: '₹1,000 Cr (project total)', duration: '[Insert] · Dec 2020 – Feb 2022', role: 'Site Engineer',
+    tech: ['100 kV', '200 kV', '440 kV', '800 kV', 'OPGW'],
+    scope: 'Replacement of existing earth cables with Optical Ground Wire (OPGW) fiber on high-voltage transmission towers across four voltage classes.',
+    challenge: 'Live high-voltage corridor work with a 30-person crew and shifts that often ran from 7:00 AM to 7:00–9:00 PM.',
+    solution: '[Insert specific field method / safety arrangement]',
+    impact: '[Insert towers completed / km of OPGW stringing]',
+    visuals: ['Tower & stringing progress', 'Route / tower layout drawing'],
+    img: 'images/transmission-line.jpg'
+  },
+  {
+    id: 2, cat: 'Industrial', catLabel: 'Industrial Plant',
+    title: 'Uflex Ltd. – Industrial Plant Complete MEP',
+    client: 'Uflex Ltd.', location: '[Insert city]', scale: '₹25 Cr', duration: '[Insert] · Ducotech tenure (Apr 2022 – Jul 2024)', role: 'Project / MEP Engineer',
+    tech: ['Transformers', 'Sandwich BBT', 'Rolls-Royce DG', 'DBs'],
+    scope: 'Complete electrical MEP setup from transformers to Distribution Boards (DBs), with Rolls-Royce DG sets.',
+    challenge: 'Fast-track deadline; first installation of Sandwich Busbar Trunking (BBT) in place of traditional cabling between transformer and panels.',
+    solution: 'Worked continuously on site for 72 hours to hold the handover date.',
+    impact: 'Project handed over on time. [Insert schedule / cost outcome]',
+    visuals: ['Sandwich BBT routing', 'Single-line diagram'],
+    img: 'images/uflex-1.jpg', img2: 'images/uflex-2.jpg'
+  },
+  {
+    id: 3, cat: 'Industrial', catLabel: 'Warehousing',
+    title: 'Geodis India – Warehouse Electrical Infrastructure',
+    client: 'Geodis India Pvt. Ltd.', location: '[Insert city]', scale: '₹1 Cr', duration: '[Insert]', role: 'Electrical Project Engineer',
+    tech: ['PSS Panels', 'LT Panels', 'DBs'],
+    scope: 'Complete electrical infrastructure readiness for a warehouse facility, including PSS panels, LT panels, DBs and power distribution networks.',
+    challenge: '[Insert site constraint]',
+    solution: '[Insert installation sequence / testing approach]',
+    impact: '[Insert readiness date / handover outcome]',
+    visuals: ['Panel room layout', 'Distribution single-line'],
+    img: 'images/Geodis.jpg'
+  },
+  {
+    id: 4, cat: 'Industrial', catLabel: 'Pump Room & Fire Systems',
+    title: 'Daikin – MEP & Firefighting Infrastructure',
+    client: 'Daikin', location: '[Insert city]', scale: '₹15 Cr', duration: '[Insert]', role: 'MEP & Firefighting Lead (site)',
+    tech: ['Pump Room', 'Fire Pipeline', 'Power Provisioning'],
+    scope: 'Pump room readiness, fire pipeline distribution across the premises, and end-to-end electrical power provisioning.',
+    challenge: '[Insert coordination challenge between fire and electrical scopes]',
+    solution: '[Insert]',
+    impact: 'Smooth, timely handover. [Insert hydrant / pump test results]',
+    visuals: ['Pump room layout', 'Fire main routing'],
+    img: 'images/daikin.jpg'
+  },
+  {
+    id: 5, cat: 'Industrial', catLabel: 'Greenfield Warehousing',
+    title: 'Pragati Warehousing – Two-Unit Greenfield MEP',
+    client: 'Pragati Warehousing', location: '[Insert city]', scale: '₹5 Cr · 3 lakh sq. ft.', duration: '[Insert]', role: 'MEP Engineer',
+    tech: ['1.4 L sq ft', '1.6 L sq ft', 'Highbay Lighting', 'Fire Pumps'],
+    scope: 'Greenfield MEP across two warehouse units: transformers, DG sets, LT panels, firefighting pumps, fire alarm systems, highbay lighting and full cabling.',
+    challenge: 'Delivering two units at once on a greenfield site.',
+    solution: '[Insert sequencing / cable management approach]',
+    impact: '3 lakh sq ft of MEP delivered. [Insert handover date]',
+    visuals: ['Site plan (two units)', 'Highbay lighting layout'],
+    img: 'images/Pragati.jpg'
+  },
+  {
+    id: 6, cat: 'Residential', catLabel: 'High-Rise Residential',
+    title: 'KVD WindPark – High-Rise Residential Project',
+    client: 'K V Developers Pvt. Ltd. (Rearco Group)', location: 'Greater Noida West', scale: '₹100 Cr', duration: 'Jun 2024 – Jan 2025', role: 'Project Engineer → MEP Engineer (Tendering & Contracts)',
+    tech: ['Electrical Rooms', 'Pump Rooms', 'STP / WTP', 'RA Billing'],
+    scope: 'MEP and electrical infrastructure for high-rise residential towers, including electrical rooms, pump rooms, STP and WTP readiness.',
+    challenge: 'Moving from site execution into commercial control while the site was still active.',
+    solution: 'Verified contractor RA bills against drawings; took charge of vendor onboarding, costing and tender closures.',
+    impact: '[Insert savings / tender value closed]',
+    visuals: ['Tower MEP risers', 'Tender comparison sheet'],
+    img: 'images/kvd-1.jpg', img2: 'images/kvd-2.jpg'
+  },
+  {
+    id: 7, cat: 'Industrial', catLabel: 'Live Logistics Facility',
+    title: 'Knight Frank / Amazon – 1 Lakh sq. ft. Warehouse (Lucknow)',
+    client: 'Amazon (via Knight Frank India Pvt. Ltd.)', location: 'Lucknow, Uttar Pradesh', scale: '1 lakh sq. ft. (part of ₹200–300 Cr portfolio)', duration: 'Jan – Nov 2025', role: 'MEP Project Engineer',
+    tech: ['Live Facility', 'Zero-Deviation QA', 'Planned Execution'],
+    scope: 'MEP work on a live, running Amazon warehouse, executed to Amazon\'s zero-deviation quality and safety standards.',
+    challenge: 'Working inside an operating facility with no tolerance for deviation.',
+    solution: 'Precise planning and execution under senior engineer guidance.',
+    impact: 'Delivered on schedule. [Insert punch-list / audit results]',
+    visuals: ['Work-zone plan', 'Safety & quality checklist'],
+    img: 'images/amazon.jpg'
+  },
+  {
+    id: 8, cat: 'Commercial', catLabel: 'Tendering & Commercial',
+    title: 'Delhivery Ltd. – Tendering & Commercial Coordination',
+    client: 'Delhivery Ltd.', location: '[Insert city]', scale: '[Insert tender volume]', duration: 'Nov 2025 – Present', role: 'Assistant Manager – Tendering & Commercial Coordination',
+    tech: ['RFP / RFQ', 'BOQ Review', 'Rate Contracts', 'Vendor Onboarding'],
+    scope: 'End-to-end tendering: RFP/RFQ floating, techno-commercial bid evaluation, BOQ and drawing review, and vendor onboarding.',
+    challenge: 'Closing tenders inside defined budgets while keeping project teams aligned.',
+    solution: 'Aggressive negotiation, value engineering and benchmark pricing.',
+    impact: '[Insert % budget saving / tenders closed]',
+    visuals: ['Bid comparison matrix', 'Vendor rate card']
+  }
+];
+
+const grid = document.getElementById('grid');
+function renderCards(filter = 'all') {
+  grid.innerHTML = '';
+  projects.filter(p => filter === 'all' || p.cat === filter).forEach((p, i) => {
+    const el = document.createElement('article');
+    el.className = 'card frame bg-white p-6 cursor-pointer transition';
+    el.innerHTML = `
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <p class="font-mono text-[11px] text-steel uppercase">PRJ-0${p.id} · ${p.catLabel}</p>
+          <h3 class="text-lg font-bold mt-1 leading-snug">${p.title}</h3>
+        </div>
+        <span class="font-mono text-xs text-slate-400">${p.scale.split(' ')[0]}</span>
+      </div>
+      ${p.img ? `<img src="${p.img}" alt="${p.title}" class="mt-4 h-32 w-full object-cover border border-slate-300">` : `<div class="ph mt-4 h-32 flex items-center justify-center border border-dashed border-slate-400 font-mono text-[11px] text-slate-500">[ SITE PHOTO · ${p.visuals[0]} ]</div>`}
+      <p class="mt-4 text-sm text-slate-600 line-clamp-2">${p.scope}</p>
+      <div class="spec-hover mt-4 grid grid-cols-2 gap-2 font-mono text-[11px] border-t border-slate-200 pt-3">
+        <div><span class="text-slate-400">ROLE</span><br>${p.role}</div>
+        <div><span class="text-slate-400">SCALE</span><br>${p.scale}</div>
+        <div class="col-span-2"><span class="text-slate-400">SPEC</span><br>${p.tech.join(' · ')}</div>
+      </div>
+      <div class="mt-4 font-mono text-xs text-amber2 font-bold">OPEN DOSSIER &rarr;</div>`;
+    el.addEventListener('click', () => openModal(p));
+    grid.appendChild(el);
+  });
+}
+
+function row(label, value) {
+  return `<div class="grid grid-cols-3 gap-3 py-2 border-b border-slate-200 text-sm">
+    <dt class="font-mono text-xs text-slate-500 uppercase">${label}</dt>
+    <dd class="col-span-2">${value}</dd></div>`;
+}
+
+function openModal(p) {
+  document.getElementById('m-cat').textContent = `PRJ-0${p.id} · ${p.catLabel}`;
+  document.getElementById('m-title').textContent = p.title;
+  document.getElementById('m-body').innerHTML = `
+    <section>
+      <h4 class="font-mono text-xs text-amber2 uppercase mb-2">01 · Project Meta</h4>
+      <dl>${row('Client / Contractor', p.client)}${row('Location', p.location)}${row('Valuation / Scale', p.scale)}${row('Duration', p.duration)}${row('Role', p.role)}</dl>
+    </section>
+    <section>
+      <h4 class="font-mono text-xs text-amber2 uppercase mb-2">02 · Scope &amp; Execution</h4>
+      <p class="text-sm leading-relaxed">${p.scope}</p>
+      <div class="mt-3 flex flex-wrap gap-2 font-mono text-xs">${p.tech.map(t => `<span class="px-2 py-1 bg-steel/10 text-steel border border-steel/30">${t}</span>`).join('')}</div>
+    </section>
+    <section>
+      <h4 class="font-mono text-xs text-amber2 uppercase mb-2">03 · Site Challenge &amp; Engineering Solution</h4>
+      <p class="text-sm leading-relaxed"><strong>Challenge:</strong> ${p.challenge}</p>
+      <p class="text-sm leading-relaxed mt-2"><strong>Solution:</strong> ${p.solution}</p>
+    </section>
+    <section>
+      <h4 class="font-mono text-xs text-amber2 uppercase mb-2">04 · Deliverables &amp; Impact</h4>
+      <p class="text-sm leading-relaxed">${p.impact}</p>
+    </section>
+    <section>
+      <h4 class="font-mono text-xs text-amber2 uppercase mb-2">05 · Visual Placeholders</h4>
+      <div class="grid sm:grid-cols-3 gap-3">
+        ${p.img ? `<img src="${p.img}" alt="${p.title}" class="h-28 w-full object-cover border border-slate-300">` : `<div class="ph h-28 border border-dashed border-slate-400 flex items-center justify-center font-mono text-[11px] text-slate-500 text-center p-2">[ SITE PROGRESS PHOTO ]</div>`}
+        <div class="ph h-28 border border-dashed border-slate-400 flex items-center justify-center font-mono text-[11px] text-slate-500 text-center p-2">[ ${p.visuals[0].toUpperCase()} ]</div>
+        ${p.img2 ? `<img src="${p.img2}" alt="${p.title} – second photo" class="h-28 w-full object-cover border border-slate-300">` : `<div class="ph h-28 border border-dashed border-slate-400 flex items-center justify-center font-mono text-[11px] text-slate-500 text-center p-2">[ BEFORE / AFTER SLIDER ]</div>`}
+      </div>
+      <p class="font-mono text-[11px] text-slate-500 mt-2">Drawing: [ ${p.visuals[1]} ]</p>
+    </section>`;
+  document.getElementById('modal').classList.remove('hidden');
+  document.body.classList.add('modal-open');
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.add('hidden');
+  document.body.classList.remove('modal-open');
+}
+document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', closeModal));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+document.querySelectorAll('.tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderCards(btn.dataset.filter);
+  });
+});
+
+renderCards();
+</script>
+</body>
+</html>
