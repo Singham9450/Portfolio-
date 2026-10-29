@@ -327,7 +327,19 @@ const projects = [
     visuals: ['Bid comparison matrix', 'Vendor rate card']
   }
 ];
-
+,{
+    id: 9, cat: 'Industrial', catLabel: '[Category label]',
+    title: 'The Village Business Park',
+    client: '[Insert client]', location: '[Insert city]', scale: '[Insert value]', duration: '[Insert dates]', role: '[Insert your role]',
+    tech: ['[Spec 1]', '[Spec 2]', '[Spec 3]'],
+    scope: '[Insert scope of work]',
+    challenge: '[Insert site challenge]',
+    solution: '[Insert how it was solved]',
+    impact: '[Insert result]',
+    visuals: ['Site progress photo', 'Layout drawing'],
+    img: 'images/village-business-park.jpg'
+  }
+  ];
 const grid = document.getElementById('grid');
 function renderCards(filter = 'all') {
   grid.innerHTML = '';
